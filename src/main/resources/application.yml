@@ -1,14 +1,13 @@
 server:
-  port: 9090
+  port: ${PORT:9090}
 
 spring:
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: test
   application:
     name: turf-management
+
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
 
 logging:
   level:
@@ -25,5 +24,5 @@ management:
         include: "*"
 
 jwt:
-  secret: mysupersecuresecretkeymysecretkey1234567890
+  secret: ${JWT_SECRET}
   expiration: 86400000
