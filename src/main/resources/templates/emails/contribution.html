@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial;
+            background-color: #f4f6f8;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .logo {
+            text-align: center;
+            font-size: 40px;
+        }
+        .content {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        .highlight {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+    <title>Morning Mavericks Cricket Club</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">🏏</div>
+
+    <h2 class="header">Morning Mavericks Cricket Club</h2>
+
+    <div class="content">
+        <p>Hello <b th:text="${name}"></b>,</p>
+
+        <p>💰 Your contribution for the match has been calculated.</p>
+
+        <p><b>📍 Turf:</b> <span th:text="${turfName}"></span></p>
+
+        <p><b>📅 Date:</b> <span th:text="${date}"></span></p>
+
+        <p><b>⏰ Time:</b> <span th:text="${time}"></span></p>
+
+        <p><b>💵 Amount Due:</b> ₹<span th:text="${amount}"></span></p>
+
+        <p>Please complete your payment at the earliest.</p>
+
+        <p><b>PhonePe / GPay:</b> 97300 93063</p>
+
+        <p>Let’s keep the game going strong 💪</p>
+
+        <p><b>Morning Mavericks Cricket Club</b></p>
+    </div>
+
+    <div class="footer">
+        <p>"Where Every Match Matters"</p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial;
+            background-color: #f4f6f8;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .logo {
+            text-align: center;
+            font-size: 40px;
+        }
+        .content {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        .highlight {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            text-align: center;
+            color: #888;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #27ae60;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+    </style>
+    <title>Morning Mavericks Cricket Club</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">🏏</div>
+
+    <h2 class="header">Welcome to Morning Mavericks Cricket Club</h2>
+
+    <div class="content">
+
+        <p>Hello <b th:text="${name}"></b>,</p>
+
+        <p>
+            🎉 Your player account has been successfully created!
+        </p>
+
+        <p>
+            You are now officially part of <span class="highlight">Morning Mavericks Cricket Club</span>,
+            where passion meets performance.
+        </p>
+
+        <p>
+            Get ready for exciting matches, team spirit, and unforgettable cricket moments 🏏
+        </p>
+
+        <p>
+            Book your next game, mark your attendance, and dominate the pitch!
+        </p>
+
+        <p>
+            See you on the field 💪
+        </p>
+
+    </div>
+
+    <div class="footer">
+        <p><b>Morning Mavericks Cricket Club</b></p>
+        <p>"Where Every Match Matters"</p>
+    </div>
+
+</div>
+
+</body>
+</html>

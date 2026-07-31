@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .logo {
+            text-align: center;
+            font-size: 40px;
+        }
+        .header {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .content {
+            margin-top: 15px;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .card {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .info p {
+            margin: 6px 0;
+        }
+        .instructions {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+    <title>Match Booking Confirmation</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">🏏</div>
+
+    <h2 class="header">Morning Mavericks Cricket Club</h2>
+    <h3 class="header">Match Booking Confirmed ✅</h3>
+
+    <div class="content">
+        <p>Hello <b th:text="${name}"></b>,</p>
+
+        <p>
+            Pleased to inform you that our turf booking has been
+            <b style="color: #27ae60;">successfully confirmed</b> 🎉
+        </p>
+
+        <div class="card info">
+            <p><b>🏟 Turf:</b> <span th:text="${turfName}"></span></p>
+            <p><b>📅 Date:</b> <span th:text="${date}"></span></p>
+            <p><b>⏰ Time:</b> Morning : <span th:text="${time}"></span></p>
+            <p><b>📍 Location:</b> <span th:text="${location}"></span></p>
+            <p><b>📝 Notes:</b> <span th:text="${notes}"></span></p>
+        </div>
+
+        <div class="instructions">
+            <p><b>📢 Important Instructions:</b></p>
+            <ul>
+                <li>Bring your <b>Own water bottle</b> 💧</li>
+                <li>Carry a <b>cap, During summer games its must</b> 🧢</li>
+                <li>Reach at least <b>15 minutes early</b> for warm-up ⏱️</li>
+                <li><b>Please be on time, </b> so we can start the game smoothly and enjoy a great match together. </li>
+            </ul>
+        </div>
+        <p>
+            Looking forward to an exciting game! 💪🏏
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        <p><b>Morning Mavericks Cricket Club</b></p>
+        <p>"Where Every Match Matters"</p>
+    </div>
+
+</div>
+
+</body>
+</html>

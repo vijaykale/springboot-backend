@@ -1,0 +1,125 @@
+1️⃣ Player
+2️⃣ Turf
+3️⃣ Booking
+4️⃣ Attendance
+5️⃣ Contribution
+
+Contribution → needs Attendance
+Attendance → needs Booking
+Booking → needs Turf + Player
+
+5916
+
+https://docs.google.com/forms/d/1gY8tlUaHJrJopUCfvayk9WujksbI-6JKHSFMiu9pKag/edit#responses
+
+olhm lfvj byrz ivgo
+
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb3JuaW5nbWF2ZXJpY2tzY2NAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJpYXQiOjE3NzM5Mjk0NzEsImV4cCI6MTc3NDAxNTg3MX0.6H4DLBBeUqNj48jPG0GhjFJxeNMZHWJxz78k7_4u0XE
+
+Players Collection
+{
+  "playerId": "PL001",
+  "name": "Vijay Kale",
+  "phone": "9730093063",
+  "email": "vijay@gmail.com",
+  "role": "ADMIN",
+  "status": "ACTIVE",
+  "matchesPlayed": 25,
+  "totalPaid": 3500,
+  "totalOutstanding": 400,
+  "joinedDate": "2024-01-10",
+  "createdAt": "2026-03-10T10:30:00",
+  "updatedAt": "2026-03-10T10:30:00"
+}
+
+Turf Collection
+{
+  "turfId": "TRF001",
+  "name": "Sportify Turf",
+  "location": "Pimpri",
+  "address": "Pimpri Chinchwad Road",
+  "pricePerHour": 800,
+  "contactNumber": "9876543210",
+  "rating": 4.5,
+  "notes": "Good turf with lights",
+  "createdAt": "2026-03-10T10:30:00",
+  "updatedAt": "2026-03-10T10:30:00"
+}
+
+{
+  "bookingId": "BOOK001",
+  "turfId": "TRF001",
+  "turfName": "Sportify Turf",
+  "bookingDate": "2026-03-15",
+  "startTime": "07:00",
+  "endTime": "09:00",
+  "totalCost": 1600,
+  "advancePaid": 500,
+  "remainingAmount": 1100,
+  "playersCount": 10,
+  "bookedBy": "PL001",
+  "status": "CONFIRMED"
+}
+
+Votes Collection
+{
+  "voteId": "VOTE001",
+  "playerId": "PL002",
+  "playerName": "Rahul",
+  "weekendDate": "2026-03-15",
+  "voteStatus": "YES",
+  "createdAt": "2026-03-12T11:00:00"
+}
+
+
+Contributions Collection
+
+{
+  "contributionId": "CON001",
+  "bookingId": "BOOK001",
+  "playerId": "PL002",
+  "playerName": "Rahul",
+  "amountDue": 200,
+  "amountPaid": 0,
+  "paymentStatus": "PENDING",
+  "createdAt": "2026-03-12T11:30:00"
+}
+
+
+Payments Collection
+
+{
+  "paymentId": "PAY001",
+  "playerId": "PL002",
+  "playerName": "Rahul",
+  "amount": 200,
+  "paymentMode": "UPI",
+  "reference": "GPay123456",
+  "description": "Sunday Turf Payment",
+  "paymentDate": "2026-03-12",
+  "createdAt": "2026-03-12T12:00:00"
+}
+
+Expenses Collection
+
+{
+  "expenseId": "EXP001",
+  "itemName": "Cricket Ball",
+  "amount": 300,
+  "paidBy": "PL003",
+  "paidByName": "Ajinkya",
+  "expenseDate": "2026-03-10",
+  "splitAmongPlayers": true,
+  "notes": "SG ball",
+  "createdAt": "2026-03-10T09:30:00"
+}
+
+Notifications Collection
+
+{
+  "notificationId": "NOT001",
+  "type": "BOOKING_CREATED",
+  "message": "Sportify turf booked for Sunday 7-9",
+  "status": "UNREAD",
+  "createdAt": "2026-03-12T11:00:00"
+}
